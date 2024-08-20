@@ -4,6 +4,7 @@ import HomeBannerPic from '../../assets/DesktopHomeBanner.png';
 import logements from '../../data/logements.json';
 import Card from '../../components/Cards/Card.jsx';
 import Header from '../../components/Header/Header.jsx';
+import Footer from '../../components/Footer/Footer.jsx';
 import './Accueil.scss';
 
 
@@ -27,6 +28,9 @@ function Accueil() {
                         />
                     )
                 }
+            </div>
+            <div>
+                <Footer />
             </div>
         </div>
     )

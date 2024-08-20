@@ -1,0 +1,22 @@
+.page_footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 42px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerLogo {
+    height: 34px;
+    margin-top: 16px;
+    max-width: 150px;
+}
+
+.footer_text {
+    margin-top: 20px;
+    font-size: 1.1em;
+    margin-bottom: 0;
+    font-family: "Montserrat", sans-serif;
+}

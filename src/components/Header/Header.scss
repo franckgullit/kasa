@@ -6,19 +6,15 @@
     padding: 20px;
     margin-top: -68px;
 
-    &__nav {
+    .header_nav {
         display: flex;
         gap: 20px;
         font-size: 18px;
-        
-    }
-    &__nav a {
         text-decoration: none;
-        color: black;
     }
 
-    &__nav a.active {
+    .header_nav.active {
         border-bottom: solid 1px black;
     }
-
+   
 }
