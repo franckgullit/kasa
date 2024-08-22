@@ -3,18 +3,20 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
-    margin-top: -68px;
-   
-    .header_nav {
-        display: flex;
-        gap: 20px;
-        font-size: 18px;
-        text-decoration: none;
-    }
+    padding: 30px;
+    margin-top:-86px;
+}
 
-    .header_nav.active {
-        border-bottom: solid 1px black;
-    }
-   
+.header_logo{
+    height:68px;
+    border:none;
+    border-radius: 1px;
+}
+
+nav{
+    display: flex;
+    gap: 33px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
 }

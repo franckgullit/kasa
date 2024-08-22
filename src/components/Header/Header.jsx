@@ -1,17 +1,17 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'
 import DesktopKasaLogo from '../../assets/DesktopKasaLogo.png';
 import './Header.scss';
- 
+
 function Header() {
     return (
-        <header className="header">
-        <img src={DesktopKasaLogo} alt="logo Kasa" className="header_logo" />
-        <nav className="header_nav">
-            <NavLink to="/">Accueil</NavLink>
-            <NavLink to="/apropos">À propos</NavLink>
-        </nav>
-        </header>
+        <div className="header">
+            <NavLink to='/'><img src={DesktopKasaLogo} alt="logo Kasa" className="header_logo" /></NavLink>
+            <nav className='page_links'>
+                <NavLink to="/">Accueil</NavLink>
+                <NavLink to="/Apropos">A Propos</NavLink>
+            </nav>
+        </div>
     )
 }
 
