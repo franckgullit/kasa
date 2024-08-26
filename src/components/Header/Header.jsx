@@ -9,8 +9,8 @@ function Header() {
         <div className="header">
             <NavLink to='/'><img src={DesktopKasaLogo} alt="logo Kasa" className="header_logo" /></NavLink>
             <nav className='page_links'>
-                <NavLink to='/' className='no-underline'>Accueil</NavLink>
-                <NavLink to='/Apropos' className='no-underline'>A Propos</NavLink>
+            <NavLink className={(nav) => (nav.isActive ? 'nav-active' : '')} to='/'>Accueil</NavLink>
+            <NavLink className={(nav) => (nav.isActive ? 'nav-active' : '')} to='/Apropos'>A Propos</NavLink>
             </nav>
         </div>
     )

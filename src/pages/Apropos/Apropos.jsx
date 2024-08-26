@@ -1,12 +1,13 @@
 import React from 'react';
-import AproposBanner from '../../components/AproposBanner/AproposBanner.jsx';
+import AproposBannerPic from '../../assets/DesktopAproposBanner.png';
+import Banner from '../../components/Banner/Banner.jsx';
 import Collapse from '../../components/Collapse/Collapse.jsx';
 
 
 function Apropos() {
     return (
-        <><div>
-            <AproposBanner />
+        <><div className='Apropos_banner'>
+            <Banner bannerImage={AproposBannerPic} alt='Apropos_banner_pic'></Banner>
         </div><div className='dropdown_menus'>
                 <Collapse title="Fiabilité" content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes." />
                 <Collapse title="Respect" content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." />

@@ -10,7 +10,7 @@ function Accueil() {
     return (
         <div>
             <div>
-                <Banner title="Chez vous, partout et ailleurs" bannerImage={HomeBannerPic} alt="Home Banner Pic" />
+                <Banner bannerImage={HomeBannerPic} alt="Home Banner Pic"> Chez vous, partout et ailleurs</Banner>
             </div>
             <div className="cardContainer">
                 {

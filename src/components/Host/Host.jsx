@@ -1,15 +1,19 @@
 import React from 'react';
 
 
-function Host(props) {
+function Host({ data }) {
     return (
         <div className='host_container'>
-            <div className='identity'>
-                <p className='name'>{props.host.name}</p>
-                <img src={props.host.picture} alt='host_pic' className='host_face' />
+            <div className='host_identity'>
+                <p className='name'>{data.host.name}</p>
+                <img src={data.host.picture} alt='host_pic' className='host_face' />
             </div>
-            <div className='star_rating'>
-                <span>{props.rating}<i className="fa-solid fa-star"></i></span>
+            <div className="star_rating" >
+                {Array.from({length: 5}, (i, index) => {
+                    const starClass = index < data.rating ? 'filled' : 'empty';
+                    const starClasses = `fa-solid fa-star ${starClass}`;
+                    return <i key={index} className={starClasses}></i>;
+                })}
             </div>
         </div>
     )

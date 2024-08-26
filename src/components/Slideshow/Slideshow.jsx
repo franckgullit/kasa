@@ -6,7 +6,7 @@ function Slideshow({ pictures }) {
 
     const nextSlide = () => {
         setCurrentIndex((prevIndex) =>
-            prevIndex === pictures.length - 1 ? 0 : prevIndex + 1
+            prevIndex === pictures.length - 1 ? 0  : prevIndex + 1
         );
     };
 

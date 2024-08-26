@@ -2,32 +2,34 @@ import React from 'react';
 import Collapse from '../../components/Collapse/Collapse.jsx';
 import Slideshow from '../../components/Slideshow/Slideshow.jsx';
 import Host from '../../components/Host/Host.jsx';
-import '../../data/logements.json';
+import Tags from'../../components/Tags/Tags.jsx';
+import logements from '../../data/logements.json';
+import { useParams } from 'react-router-dom';
 
 
-function Logements(props) {
+function Logements() {
+    const { id } = useParams();
+    const logement = logements.find((data) => data.id === id)
     return (
         <><div className='Slideshow'>
-            <Slideshow />
+            <Slideshow pictures={logement.pictures} />
         </div>
             <div className='Logement_Info'>
                 <div className='info'>
-                    <p className='title'>{props.title}</p>
-                    <p className='location'>{props.location}</p>
-                    <div className='tags'>
-                        {props.tags.map((tag, index) => (
-                            <span key={index} className='tag'>{tag}</span>
-                        ))}
+                    <p className='title'>{logement.title}</p>
+                    <p className='location'>{logement.location}</p>
+                    <div className='tagss'>
+                        <Tags data={logement} />
                     </div>
                 </div>
                 <div className='Host'>
-                    <Host />
+                    <Host data={logement} />
                 </div>
                 <div className='description_equipements'>
-                    <Collapse title="Description" content={<p>{props.description}</p>} />
+                    <Collapse title="Description" content={<p>{logement.description}</p>} />
                     <Collapse title="Équipements" content={<ul>
-                        {props.equipments.map((equipment, index) => (
-                            <li key={index}>{equipment}</li>
+                        {logement.equipments.map((equipment, index) => (
+                            <li key={`${equipment} - ${index}`} >{equipment}</li>
                         ))}
                     </ul>} />
                 </div>

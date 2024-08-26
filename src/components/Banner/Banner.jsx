@@ -1,12 +1,13 @@
 import React from "react";
-import HomeBannerPic from '../../assets/DesktopHomeBanner.png';
 import './Banner.scss';
 
-function Banner() {
+function Banner(props) {
   return (
-    <div className="homebanner">
-      <img src={HomeBannerPic} alt="homebanner_pic" />
-      <h1 className="banner-text">Chez vous, partout et ailleurs</h1>
+    <div className="banner">
+      <img src={props.bannerImage} alt="banner_pic" />
+      <div className='background'>
+        <h1>{props.children}</h1>
+      </div>
     </div>
   );
 }
