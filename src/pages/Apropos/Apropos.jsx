@@ -2,6 +2,7 @@ import React from 'react';
 import AproposBannerPic from '../../assets/DesktopAproposBanner.png';
 import Banner from '../../components/Banner/Banner.jsx';
 import Collapse from '../../components/Collapse/Collapse.jsx';
+import './Apropos.scss';
 
 
 function Apropos() {
