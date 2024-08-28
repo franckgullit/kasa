@@ -7,6 +7,18 @@
     font-family: "Montserrat", sans-serif;
     transition: background-color 0.3s ease;
 
+    button {
+        padding-right: 20px;
+        cursor: pointer;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ff6f61;
+        border-radius: 5px;
+        border: none;
+    }
+
     .fa-solid {
         font-size: 1.2em;
         color: white;
@@ -24,18 +36,28 @@
     font-family: "Montserrat", sans-serif;
     transition: background-color 0.3s ease;
 
+    button {
+        padding-right: 20px;
+        cursor: pointer;
+        width: 79%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ff6f61;
+        border-radius: 5px;
+        border: none;
+    }
+
     .fa-solid {
         color: white;
         font-size: 1.2em;
         transform: rotate(360deg);
         transition: transform 0.3s ease;
     }
- 
+
 }
 
-.collapsed_menu button {
-    width: 79%;
-}
+
 
 h2 {
     font-size: 1.5em;
@@ -53,16 +75,4 @@ h2 {
     text-align: left;
     width: 77%;
     margin-bottom: 3px;
-}
-
-button {
-    padding-right: 20px;
-    cursor: pointer;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #ff6f61;
-    border-radius: 5px;
-    border: none;
 }

@@ -17,15 +17,17 @@ function Logements() {
                 <Slideshow pictures={logement.pictures} />
             </div>
             <div className='Logement_Info'>
-                <div className='info'>
-                    <p className='title'>{logement.title}</p>
-                    <p className='location'>{logement.location}</p>
-                    <div className='tagss'>
-                        <Tags data={logement} />
+                <div className='logement_details'>
+                    <div className='info'>
+                        <p className='title'>{logement.title}</p>
+                        <p className='location'>{logement.location}</p>
+                        <div className='tagss'>
+                            <Tags data={logement} />
+                        </div>
                     </div>
-                </div>
-                <div className='Host'>
-                    <Host data={logement} />
+                    <div className='Host'>
+                        <Host data={logement} />
+                    </div>
                 </div>
                 <div className='description_equipements'>
                     <Collapse title="Description" content={<p>{logement.description}</p>} />
