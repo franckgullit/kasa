@@ -21,7 +21,6 @@ function Slideshow({ pictures }) {
             <i className='fa-solid fa-chevron-left' onClick={prevSlide}></i>
             <img src={pictures[currentIndex]} alt='current_slide_image'className='slide-image' />
             <i className='fa-solid fa-chevron-right' onClick={nextSlide}></i>
-
         </div>
     );
 }

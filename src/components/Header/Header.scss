@@ -6,7 +6,7 @@
     padding: 30px;
     width:90%;
     margin:30px;
-    margin-top:-68px;
+    margin-top:-10px;
   
     .header_logo {
         height: 68px;
@@ -15,11 +15,15 @@
     .page_links {
         display: flex;
         gap: 33px;
-        font-size: 16px;
-        font-weight: 500;
+        font-size: 20px;
+        font-weight: 400;
     }
 
-    nav a :active{
+    nav a{
+        text-decoration: none;
+    }
+
+    nav a:focus{
         border-bottom: solid 1px black;
     }
 

@@ -6,6 +6,13 @@
     font-weight: 700;
     font-family: "Montserrat", sans-serif;
     transition: background-color 0.3s ease;
+
+    .fa-solid {
+        font-size: 1.2em;
+        transform: rotate(180deg);
+        transition: transform 0.3s ease;
+        color: white;
+    }
 }
 
 .collapsed_menu {
@@ -18,6 +25,15 @@
     border-radius: 10px;
     font-family: "Montserrat", sans-serif;
     transition: background-color 0.3s ease;
+
+    .fa-solid {
+        color: white;
+        font-size: 1.2em;
+        transform: rotate(180deg);
+        transition: transform 0.3s ease;
+    }
+
+
 }
 
 .collapsed_menu button {
@@ -29,12 +45,7 @@ h2 {
     color: white;
 }
 
-.fa-solid {
-    font-size: 1.2em;
-    transform: rotate(180deg);
-    transition: transform 0.3s ease;
-    color: white;
-}
+
 
 .collapsed_content {
     font-size: 1.25em;
@@ -45,7 +56,7 @@ h2 {
     font-weight: lighter;
     margin-top: 1px;
     text-align: left;
-    width:77%;
+    width: 77%;
     margin-bottom: 3px;
 }
 
