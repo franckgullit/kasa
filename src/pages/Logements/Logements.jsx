@@ -2,8 +2,9 @@ import React from 'react';
 import Collapse from '../../components/Collapse/Collapse.jsx';
 import Slideshow from '../../components/Slideshow/Slideshow.jsx';
 import Host from '../../components/Host/Host.jsx';
-import Tags from'../../components/Tags/Tags.jsx';
+import Tags from '../../components/Tags/Tags.jsx';
 import logements from '../../data/logements.json';
+import './Logements.scss'
 import { useParams } from 'react-router-dom';
 
 
@@ -11,9 +12,10 @@ function Logements() {
     const { id } = useParams();
     const logement = logements.find((data) => data.id === id)
     return (
-        <><div className='Slideshow'>
-            <Slideshow pictures={logement.pictures} />
-        </div>
+        <><div className='logement_body'>
+            <div className='Slideshow'>
+                <Slideshow pictures={logement.pictures} />
+            </div>
             <div className='Logement_Info'>
                 <div className='info'>
                     <p className='title'>{logement.title}</p>
@@ -33,7 +35,8 @@ function Logements() {
                         ))}
                     </ul>} />
                 </div>
-            </div></>
+            </div>
+        </div></>
     )
 }
 
