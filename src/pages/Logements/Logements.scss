@@ -2,14 +2,14 @@
     padding: 10px;
 }
 
-.logement_details{
+.logement_details {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom:33px;
+    margin-bottom: 33px;
 
-    .Host{
-        margin-right:86px;
+    .Host {
+        margin-right: 86px;
     }
 }
 
@@ -24,26 +24,34 @@
         font-size: 36px;
         font-weight: 500;
         color: #FF6060;
-        margin-bottom:0px;
-        margin-top:0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
     }
 
     .location {
         font-size: 18px;
         font-weight: 500;
         color: #000000;
-        margin-top:0px;
+        margin-top: 0px;
     }
 }
 
-.description_equipements{
-    
+.description_equipements {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 14px;
 
-    .equipements{
+    button {
+        width: 49em;
+        margin-right: 33px;
+        height:4em;
+    }
+
+    ul {
         list-style: none;
+        margin-right: 10px;
     }
+
+
 }
-
-  
-
-
