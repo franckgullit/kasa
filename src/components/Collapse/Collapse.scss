@@ -55,24 +55,23 @@
         transition: transform 0.3s ease;
     }
 
+    .collapsed_content {
+        font-size: 1.25em;
+        color: #333;
+        padding: 5px 12px;
+        background-color: rgb(245, 241, 241);
+        font-family: "Montserrat", sans-serif;
+        font-weight: lighter;
+        margin-top: 1px;
+        text-align: left;
+        width: 77%;
+        margin-bottom: 3px;
+    }
+
 }
-
-
 
 h2 {
     font-size: 1.5em;
     color: white;
 }
 
-.collapsed_content {
-    font-size: 1.25em;
-    color: #333;
-    padding: 5px 12px;
-    background-color: rgb(245, 241, 241);
-    font-family: "Montserrat", sans-serif;
-    font-weight: lighter;
-    margin-top: 1px;
-    text-align: left;
-    width: 77%;
-    margin-bottom: 3px;
-}
