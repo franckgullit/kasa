@@ -15,6 +15,7 @@ function Slideshow({ pictures }) {
         setCurrentIndex((prevIndex) =>
             prevIndex === 0 ? pictures.length - 1 : prevIndex - 1
         );
+
     };
 
     return (
@@ -23,6 +24,7 @@ function Slideshow({ pictures }) {
             <img src={pictures[currentIndex]} alt='current_slide_image'className='slide-image' />
             <i className='fa-solid fa-chevron-right' onClick={nextSlide}></i>
         </div>
+        
     );
 }
 

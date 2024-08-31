@@ -13,12 +13,14 @@ function Collapse(props) {
         </div>
     ) : (
         <div className='collapsed_menu'>
-        <><button onClick={() => setIsCollapsed(true)}>
-            <h2>{props.title}</h2>
-            <i className="fa-solid fa-chevron-down"></i>
-        </button>
-            <div className='collapsed_content'><p>{props.content}</p></div>
-        </>
+            <><button onClick={() => setIsCollapsed(true)}>
+                <h2>{props.title}</h2>
+                <i className="fa-solid fa-chevron-down"></i>
+            </button>
+                <div className='collapsed_content'>
+                    <p>{props.content}</p>
+                </div>
+            </>
         </div>
     )
 }

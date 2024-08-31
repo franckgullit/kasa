@@ -13,6 +13,10 @@
       border-radius: 25px;
       object-fit: cover;
       height:400px;
+
+      .sideclick {
+        display:none;
+      }
     }
   
     .fa-chevron-left, .fa-chevron-right {

@@ -4,27 +4,50 @@
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-    width:90%;
-    margin:30px;
-    margin-top:-10px;
-  
+    width: 90%;
+    margin: 30px;
+    margin-top: -10px;
+
     .header_logo {
         height: 68px;
     }
 
     .page_links {
         display: flex;
-        gap: 33px;
+        gap: 25px;
         font-size: 20px;
         font-weight: 400;
     }
 
-    nav a{
+    nav a {
         text-decoration: none;
     }
 
-    nav a:focus{
+    nav a:focus {
         border-bottom: solid 1px black;
     }
+}
 
+@media (max-width: 767.98px) {
+    .header {
+        margin: -5px;
+        width: 87%;
+
+        img {
+            max-width: 30vw;
+            display: block;
+            width: 100%;
+        }
+
+        .page_links {
+            gap: 15px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        nav {
+            font-size: 1.2vh;
+            text-transform: uppercase;
+        }
+    }
 }

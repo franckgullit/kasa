@@ -10,3 +10,11 @@
     position:relative;
 }
 
+@media (max-width: 767.98px){
+    .cardContainer{
+        width:100%;
+        background-color: white;
+        margin:-5px;
+        margin-bottom: 10px;
+    }
+}
