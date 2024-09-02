@@ -30,8 +30,8 @@ function Logements() {
                     </div>
                 </div>
                 <div className='description_equipements'>
-                    <Collapse title="Description" content={<p className='description'>{logement.description}</p>} />
-                    <Collapse title="Équipements" content={<ul className='equipements'>
+                    <Collapse title="Description" content={<p className='description_content'>{logement.description}</p>} />
+                    <Collapse title="Équipements" content={<ul className='equipements_content'>
                         {logement.equipments.map((equipment, index) => (
                             <li key={`${equipment} - ${index}`} >{equipment}</li>
                         ))}
