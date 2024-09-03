@@ -3,6 +3,8 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 33px;
+    width: 100%;
+
 
     .Host {
         margin-right: 86px;
@@ -15,6 +17,7 @@
     align-items: flex-start;
     margin-left: 50px;
     font-family: montserrat;
+    width: 70%;
 
     .title {
         font-size: 36px;
@@ -33,69 +36,57 @@
 }
 
 .description_equipements {
+    width: 92%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 15px;
-    margin: 0px 0px 30px -33px;
+    justify-content: space-between;
+    gap: 80px;
+    margin-left: 52px;
+    margin-bottom: 33px;
 
-    button {
-        width: 51em;
-        height: 4em;
-    }
+}
 
-        .description_content {
-            font-size: 1em;
-            color: #333;
-            padding: 20px 12px;
-            background-color: rgb(245, 241, 241);
-            font-family: "Montserrat", sans-serif;
-            font-weight: lighter;
-            margin-top: -12px;
-            text-align: left;
-            width: 40em;
+@media (max-width: 767.98px) {
+    .logement_body {
+        width: 90%;
+
+        .Host {
+            margin-right: -45px;
+            margin-left: 40px;
         }
 
-         .equipements_content {
-            font-size: 1em;
-            list-style: none;
-            color: #333;
-            padding: 12px;
-            background-color: rgb(245, 241, 241);
-            font-family: "Montserrat", sans-serif;
-            font-weight: lighter;
-            margin-top: -12px;
-            text-align: left;
-            width: 40em;
-        }
-    }
+        .logement_details {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-left: -20px;
 
-    @media (max-width: 767.98px){
-        .logement_body{
-            width:90%;
 
-            .logement_details {
+            .info {
                 display: flex;
                 flex-direction: column;
-                gap: 10px; 
-                width: 100%; 
-                
-                .Host {
-                  display: flex;
-                  flex-direction: row; 
-                  margin-bottom: -20px;
-                  justify-content: space-between; 
-                  align-items: center; 
-                  text-align: left; 
-                  width: 100%; 
-                  gap: 10px; 
+                width: 100%;
+
+                .title {
+                    font-size: 18px;
+                    font-weight: 500;
                 }
 
-            .description_equipements{
-                display:flex;
-                flex-direction: column;
+                .location {
+                    font-size: 14px;
+                    font-weight: 500;
+                }
             }
-
         }
-    }  
+
+        .description_equipements {
+            gap: 10px;
+            width: 104%;
+            display: flex;
+            flex-direction: column;
+            margin-left: 115px;
+        }
+
+    }
+
 }

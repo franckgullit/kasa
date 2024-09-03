@@ -2,9 +2,9 @@
     display:flex;
     flex-direction: row;
     gap:15px;
+   
 
     button{
-        cursor: pointer;
         width: 80%;
         display: flex;
         align-items: center;
@@ -16,9 +16,25 @@
     .tag {
         padding:20px;
         height:5px;
-        border-radius: 10px;
+        border-radius: 20px;
         color:white;
         font-weight: lighter;
     }
-    
+}
+
+@media (max-width: 767.98px){
+    .tags_container{
+        width:90%;
+
+        button{
+            width:9.3em;
+        }
+
+        .tag {
+            padding:20px;
+            border-radius: 20px;
+            color:white;
+            font-weight: lighter;
+        }
+    }
 }

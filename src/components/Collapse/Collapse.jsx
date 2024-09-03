@@ -1,28 +1,24 @@
-import React, { useState } from 'react';
-import './Collapse.scss';
+import React, { useState } from 'react'; 
+import './Collapse.scss'; 
 
-function Collapse(props) {
-    const [isCollapsed, setIsCollapsed] = useState(true);
+function Collapse({ title, content }) {
+  const [isOpen, setIsOpen] = useState(false); 
 
-    return isCollapsed ? (
-        <div className='collapse_menu'>
-            <button onClick={() => setIsCollapsed(false)}>
-                <h2>{props.title}</h2>
-                <i className="fa-solid fa-chevron-up"></i>
-            </button>
-        </div>
-    ) : (
-        <div className='collapsed_menu'>
-            <><button onClick={() => setIsCollapsed(true)}>
-                <h2>{props.title}</h2>
-                <i className="fa-solid fa-chevron-down"></i>
-            </button>
-                <div className='collapsed_content'>
-                    <p>{props.content}</p>
-                </div>
-            </>
-        </div>
-    )
+  const toggleCollapse = () => {
+    setIsOpen(!isOpen); 
+  };
+
+  return (
+    <div className={`collapse ${isOpen ? 'open' : ''}`}> 
+      <div className="collapse_header" onClick={toggleCollapse}> 
+        <h2>{title}</h2> 
+        <i className={`chevron_icon fa-solid fa-chevron-up ${isOpen ? 'open' : ''}`}></i> 
+      </div>
+      <div className={`collapse_content ${isOpen ? 'open' : ''}`}> 
+        {content} 
+      </div>
+    </div>
+  );
 }
 
-export default Collapse
+export default Collapse; 
