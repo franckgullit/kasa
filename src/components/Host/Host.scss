@@ -1,34 +1,68 @@
 .host_container {
     display: flex;
     flex-direction: column;
-    gap:15px;
+    gap: 15px;
 
-.host_identity {
-    display: flex;
-    flex-direction: row;
-    gap:20px;
+    .host_identity {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
 
-   .host_face {
-        border-radius: 35px;
-        width: 3.88em;
-        height: 3.88em;
+        .host_face {
+            border-radius: 35px;
+            width: 3.88em;
+            height: 3.88em;
+        }
+
+        .name {
+            color: #FF6060;
+        }
     }
 
-    .name{
-        color: #FF6060;
+    .star_rating {
+        margin-right: -86px;
+
+        .filled {
+            color: #FF6060;
+        }
+
+        .empty {
+            color: lightgrey;
+        }
     }
+
 }
 
-.star_rating{
-   margin-right: -86px;
+@media (max-width: 767.98px) {
+    .host_container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 45px;
 
-   .filled{
-    color:#FF6060;
-   }
+        .host_identity {
+            display: flex;
+            flex-direction: row; 
+            align-items: center; 
+            justify-content: flex-end; 
+            text-align: right; 
+          }
+      
+          .host_identity .name {
+            margin-right: 10px; 
+          }
+      
+          .host_identity .host_face {
+            width: 70px; 
+            height: 70px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+          }
 
-   .empty{
-    color:lightgrey;
-   }
-}
-
+          .star_rating {
+            display: flex;
+            justify-content: flex-start; 
+            margin-right: auto;
+          }
+    }
 }

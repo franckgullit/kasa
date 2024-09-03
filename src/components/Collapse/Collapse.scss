@@ -1,7 +1,7 @@
 .collapse_menu {
     display: flex;
     justify-content: center;
-    padding: 5px 10px;
+    padding: 0px 10px;
     cursor: pointer;
     font-weight: 700;
     font-family: "Montserrat", sans-serif;
@@ -42,18 +42,18 @@
         transform: rotate(360deg);
         transition: transform 0.3s ease;
     }
-}
 
-button {
-    padding-right: 20px;
-    cursor: pointer;
-    width: 79%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #ff6f61;
-    border-radius: 5px;
-    border: none;
+    button {
+        padding-right: 20px;
+        cursor: pointer;
+        width: 78.8%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ff6f61;
+        border-radius: 5px;
+        border: none;
+    }
 }
 
 h2 {
@@ -65,37 +65,29 @@ h2 {
     .collapse_menu {
         button {
             padding-right: 20px;
-            width: 95%;
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: space-between;
             background-color: #ff6f61;
             border-radius: 5px;
             border: none;
-            margin-left: -225px;
+            margin-left: -220px;
         }
     }
 
     .collapsed_menu {
         button {
             padding-right: 20px;
-            width: 90%;
+            width: 97.1%;
             display: flex;
             align-items: center;
             justify-content: space-between;
             background-color: #ff6f61;
             border-radius: 5px;
             border: none;
-            margin-left: -225px;
+            margin-left: -220px;
         }
 
-        .collapsed_content {
-            font-size: 1.25em;
-            margin-top: 1px;
-            text-align: left;
-            width: 83%;
-            margin-bottom: 3px;
-            margin-left: -225px;
-        }
     }
 }

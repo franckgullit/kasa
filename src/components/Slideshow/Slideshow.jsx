@@ -7,7 +7,7 @@ function Slideshow({ pictures }) {
 
     const nextSlide = () => {
         setCurrentIndex((prevIndex) =>
-            prevIndex === pictures.length - 1 ? 0  : prevIndex + 1
+            prevIndex === pictures.length - 1 ? 0 : prevIndex + 1
         );
     };
 
@@ -20,11 +20,15 @@ function Slideshow({ pictures }) {
 
     return (
         <div className='slideshow_container'>
-            <i className='fa-solid fa-chevron-left' onClick={prevSlide}></i>
-            <img src={pictures[currentIndex]} alt='current_slide_image'className='slide-image' />
-            <i className='fa-solid fa-chevron-right' onClick={nextSlide}></i>
+            {pictures.length > 1 && (
+                <i className='fa-solid fa-chevron-left' onClick={prevSlide}></i>
+            )}
+            <img src={pictures[currentIndex]} alt='current_slide_image' className='slide-image' />
+            {pictures.length > 1 && (
+                <i className='fa-solid fa-chevron-right' onClick={nextSlide}></i>
+            )}
         </div>
-        
+
     );
 }
 
