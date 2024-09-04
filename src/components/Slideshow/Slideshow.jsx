@@ -20,12 +20,13 @@ function Slideshow({ pictures }) {
 
     return (
         <div className='slideshow_container'>
-            {pictures.length > 1 && (
-                <i className='fa-solid fa-chevron-left' onClick={prevSlide}></i>
-            )}
             <img src={pictures[currentIndex]} alt='current_slide_image' className='slide-image' />
+
             {pictures.length > 1 && (
-                <i className='fa-solid fa-chevron-right' onClick={nextSlide}></i>
+                <>  <i className='fa-solid fa-chevron-left' onClick={prevSlide}></i>
+                    <i className='fa-solid fa-chevron-right' onClick={nextSlide}></i>
+                    <p className='imgslide_number'>{`${currentIndex + 1}/${pictures.length}`}</p>
+                </>
             )}
         </div>
 

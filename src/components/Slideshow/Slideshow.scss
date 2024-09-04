@@ -32,12 +32,20 @@
   .fa-chevron-right {
     right: 10px;
   }
+
+  .imgslide_number {
+    position: absolute;
+    bottom: 1px;
+    font-size: 1em;
+    font-weight: 400;
+    color:white;
+  }
 }
 
 @media (max-width: 767.98px){
   .slideshow_container{
-    width:100%;
-    margin-left:30px;
+    width:104%;
+    margin-left:20px;
 
     .slide-image{
       height:255px;
@@ -56,6 +64,10 @@
 
     .fa-chevron-right{
       right:1px;
+    }
+
+    .imgslide_number{
+      display:none;
     }
   }
 }

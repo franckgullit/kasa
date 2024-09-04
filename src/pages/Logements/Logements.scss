@@ -66,6 +66,8 @@
                 display: flex;
                 flex-direction: column;
                 width: 100%;
+                text-align: left;
+                margin-left: 40px;
 
                 .title {
                     font-size: 18px;
@@ -81,7 +83,7 @@
 
         .description_equipements {
             gap: 10px;
-            width: 104%;
+            width: 105%;
             display: flex;
             flex-direction: column;
             margin-left: 115px;
