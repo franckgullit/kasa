@@ -11,6 +11,7 @@ import { useParams } from 'react-router-dom';
 function Logements() {
     const { id } = useParams();
     const logement = logements.find((data) => data.id === id)
+    
     return (
         <><div className='logement_body'>
             <div className='Slideshow'>
